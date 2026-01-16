@@ -74,7 +74,7 @@ function LandingPage({ onJoinRoom }) {
                             A collaborative Python editor that abstracts away the complexity of environment setup.
                         </p>
                         <p className="desc-sub">
-                            No installation required. Create a room and start building together.
+                            No installation required. Create a room. Share the Room ID. Start building together.
                         </p>
                     </div>
                 </header>
