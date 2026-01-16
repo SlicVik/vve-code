@@ -74,7 +74,7 @@ function LandingPage({ onJoinRoom }) {
                             A collaborative Python editor that abstracts away the complexity of environment setup.
                         </p>
                         <p className="desc-sub">
-                            Code with friends in real-time. No installation required—just create a room and start building together.
+                            No installation required. Create a room and start building together.
                         </p>
                     </div>
                 </header>
@@ -114,7 +114,7 @@ function LandingPage({ onJoinRoom }) {
 
                 <footer className="minimal-footer">
                     <div className="specs">
-                        <span>Utilizing Python 3.12</span>
+                        <span>Utilizing Python 3.12 + 50 popular libraries</span>
                     </div>
                     <div className="version">V1.0.0</div>
                 </footer>
