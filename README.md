@@ -4,7 +4,6 @@ A collaborative Python editor that abstracts away the complexity of environment 
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![React](https://img.shields.io/badge/React-18-61DAFB)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Features
 
@@ -111,4 +110,4 @@ See [allowlist.txt](./allowlist.txt) for the complete list.
 
 ## License
 
-MIT © 2026 VVE Code
+© 2026 VVE Code. All rights reserved.
