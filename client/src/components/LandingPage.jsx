@@ -59,13 +59,23 @@ function LandingPage({ onJoinRoom }) {
 
             <div className="main-content">
                 <header className="hero-header">
-                    <h1 className="hero-title">
-                        <span className="title-top">VVE</span>
-                        <span className="title-bottom">CODE</span>
-                    </h1>
-                    <div className="hero-status">
-                        <span className="status-dot"></span>
-                        SYSTEM_ONLINE
+                    <div className="hero-left">
+                        <h1 className="hero-title">
+                            <span className="title-top">VVE</span>
+                            <span className="title-bottom">CODE</span>
+                        </h1>
+                        <div className="hero-status">
+                            <span className="status-dot"></span>
+                            SYSTEM_ONLINE
+                        </div>
+                    </div>
+                    <div className="hero-description">
+                        <p className="desc-main">
+                            A collaborative Python editor that abstracts away the complexity of environment setup.
+                        </p>
+                        <p className="desc-sub">
+                            Code with friends in real-time. No installation required—just create a room and start building together.
+                        </p>
                     </div>
                 </header>
 
@@ -104,11 +114,7 @@ function LandingPage({ onJoinRoom }) {
 
                 <footer className="minimal-footer">
                     <div className="specs">
-                        <span>PYTHON 3.12</span>
-                        <span>/</span>
-                        <span>MATPLOTLIB</span>
-                        <span>/</span>
-                        <span>YJS SYNC</span>
+                        <span>Utilizing Python 3.12</span>
                     </div>
                     <div className="version">V1.0.0</div>
                 </footer>

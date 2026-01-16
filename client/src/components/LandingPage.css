@@ -110,9 +110,39 @@
 .hero-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     border-bottom: 1px solid var(--dim);
     padding-bottom: 1rem;
+    gap: 3rem;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.hero-description {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.desc-main {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.desc-sub {
+    font-size: 0.9rem;
+    color: var(--text-secondary, #888);
+    line-height: 1.6;
+    margin: 0;
 }
 
 .hero-title {
