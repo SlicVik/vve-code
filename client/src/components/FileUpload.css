@@ -1,0 +1,168 @@
+/* Modal Overlay */
+.file-upload-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* Modal Content */
+.file-upload-modal {
+    background: var(--void);
+    border: 1px solid var(--dim);
+    width: 550px;
+    max-width: 90vw;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+}
+
+.upload-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--dim);
+}
+
+.upload-modal-header h2 {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.upload-modal-close {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.upload-modal-close:hover {
+    color: var(--text);
+}
+
+.upload-content {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.upload-hint {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg-tertiary);
+    padding: 0.5rem;
+    border: 1px solid var(--dim);
+    text-align: center;
+}
+
+.upload-error {
+    background: rgba(255, 51, 51, 0.1);
+    color: #ff3333;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Drop Zone */
+.drop-zone {
+    border: 1px dashed var(--dim);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    background: transparent;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.drop-zone.dragging {
+    border-color: var(--lime);
+    background: rgba(204, 255, 0, 0.05);
+}
+
+.drop-zone:hover {
+    border-color: var(--text-secondary);
+}
+
+.drop-label {
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Uploaded List */
+.uploaded-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.uploaded-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-tertiary);
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--dim);
+}
+
+.file-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.file-name {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.file-size {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 1.2rem;
+    line-height: 1;
+    transition: color 0.15s;
+}
+
+.delete-btn:hover {
+    color: #ff3333;
+}
+
+.empty-files {
+    text-align: center;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 2rem 0;
+    font-size: 0.85rem;
+}

@@ -1,0 +1,120 @@
+/* Modal Overlay */
+.libraries-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* Modal Content */
+.libraries-modal {
+    background: var(--void);
+    border: 1px solid var(--dim);
+    width: 450px;
+    max-width: 90vw;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+}
+
+.libraries-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--dim);
+}
+
+.libraries-header h2 {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.libraries-close {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.libraries-close:hover {
+    color: var(--text);
+}
+
+.libraries-content {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.libraries-section {
+    margin-bottom: 1.5rem;
+}
+
+.libraries-section:last-child {
+    margin-bottom: 0;
+}
+
+.libraries-section h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+}
+
+.library-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.library-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-tertiary);
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--dim);
+}
+
+.library-item.user-installed {
+    border-left: 2px solid var(--lime);
+}
+
+.library-name {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.library-version {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.no-libraries {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    padding: 1.5rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--dim);
+    line-height: 1.6;
+}

@@ -1,0 +1,140 @@
+.file-explorer {
+    display: flex;
+    flex-direction: column;
+    background: var(--void);
+    border-bottom: 1px solid var(--dim);
+}
+
+.file-tabs {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.file-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: transparent;
+    border: none;
+    border-right: 1px solid var(--dim);
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    transition: all 0.15s;
+    white-space: nowrap;
+}
+
+.file-tab:hover {
+    background: var(--bg-tertiary);
+    color: var(--text);
+}
+
+.file-tab.active {
+    background: var(--bg-tertiary);
+    color: var(--lime);
+    border-bottom: 2px solid var(--lime);
+}
+
+.file-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0 0.25rem;
+    font-size: 0.75rem;
+    opacity: 0.4;
+    transition: all 0.15s;
+}
+
+.delete-btn:hover {
+    color: #ff3333;
+    opacity: 1;
+}
+
+.new-file-btn {
+    padding: 0.6rem 1rem;
+    background: transparent;
+    border: none;
+    border-right: 1px solid var(--dim);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.15s;
+}
+
+.new-file-btn:hover {
+    background: var(--bg-tertiary);
+    color: var(--lime);
+}
+
+.new-file-input {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border-right: 1px solid var(--dim);
+}
+
+.new-file-input input {
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-tertiary);
+    border: none;
+    color: var(--text);
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    width: 120px;
+}
+
+.new-file-input input:focus {
+    outline: none;
+    background: var(--dim);
+}
+
+.new-file-input button {
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    border: none;
+    border-left: 1px solid var(--dim);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.15s;
+}
+
+.new-file-input button:hover {
+    color: var(--text);
+    background: var(--dim);
+}
+
+.new-file-input button:first-of-type:hover {
+    color: var(--lime);
+}
+
+.file-info {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.65rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--dim);
+    background: var(--bg-secondary);
+}
+
+.file-count {
+    opacity: 0.6;
+}

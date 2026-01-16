@@ -1,0 +1,12 @@
+.editor-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--bg-primary);
+    border-right: 1px solid var(--border);
+}
+
+.editor-container {
+    flex: 1;
+    min-height: 0;
+}

@@ -1,0 +1,93 @@
+.shared-output-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--bg-secondary);
+    border-left: 1px solid var(--dim);
+    overflow: hidden;
+}
+
+.shared-output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: var(--void);
+    border-bottom: 1px solid var(--dim);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.shared-by {
+    color: var(--lime);
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 0.65rem;
+    text-transform: none;
+}
+
+.shared-output-body {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--void);
+}
+
+.shared-output-content {
+    padding: 1rem;
+    margin: 0;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--lime);
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.shared-plots {
+    border-top: 1px solid var(--dim);
+    padding: 0.75rem;
+    background: var(--void);
+}
+
+.shared-plots-header {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.shared-plots-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.shared-plot-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--dim);
+    padding: 0.5rem;
+}
+
+.shared-plot-item img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.shared-plot-item .plot-name {
+    margin-top: 0.25rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+}

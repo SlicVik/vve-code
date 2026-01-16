@@ -1,0 +1,82 @@
+# Python Package Allowlist for Co-Lab Runtime
+# These packages are safe to install (no network/system access)
+# Format: package_name|description
+
+# Data Science & Computation
+numpy|Fundamental package for scientific computing
+pandas|Data analysis and manipulation library
+scipy|Scientific computing and algorithms
+scikit-learn|Machine learning library
+statsmodels|Statistical modeling and econometrics
+
+# Data Visualization
+matplotlib|2D plotting library
+seaborn|Statistical data visualization
+plotly|Interactive graphing library
+bokeh|Interactive visualization library
+
+# Math & Symbolic
+sympy|Symbolic mathematics
+mpmath|Arbitrary-precision arithmetic
+
+# Text & NLP
+nltk|Natural language toolkit
+spacy|Industrial-strength NLP
+textblob|Simplified text processing
+regex|Advanced regular expressions
+
+# Image Processing
+pillow|Python Imaging Library (PIL fork)
+opencv-python-headless|Computer vision (no GUI)
+scikit-image|Image processing algorithms
+imageio|Image reading and writing
+
+# Data Formats
+pyyaml|YAML parser and emitter
+toml|TOML parser
+orjson|Fast JSON library
+msgpack|MessagePack serialization
+python-dateutil|Date utilities
+pytz|Timezone definitions
+
+# Data Validation
+pydantic|Data validation using Python type hints
+marshmallow|Object serialization/deserialization
+attrs|Python classes without boilerplate
+dataclasses-json|Dataclass serialization
+
+# Utilities
+tqdm|Progress bars
+click|Command line interface creation
+rich|Rich text and formatting
+tabulate|Pretty-print tabular data
+colorama|Cross-platform colored terminal text
+python-dotenv|Environment variable management
+
+# Testing (for learning purposes)
+pytest|Testing framework
+hypothesis|Property-based testing
+
+# Cryptography (for learning, not network)
+hashlib|Built-in (no install needed)
+
+# Numeric & Arrays
+numba|JIT compiler for NumPy
+polars|Fast DataFrame library
+dask|Parallel computing
+xarray|N-dimensional labeled arrays
+
+# Machine Learning Extras
+xgboost|Gradient boosting framework
+lightgbm|Light gradient boosting
+catboost|Gradient boosting on decision trees
+
+# Audio/Signal
+librosa|Audio and music signal analysis
+soundfile|Read/write sound files
+
+# Misc Safe Libraries
+faker|Generate fake data
+emoji|Emoji for Python
+arrow|Better dates and times
+pendulum|Datetime made easy

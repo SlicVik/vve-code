@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Kinetic Minimalist Palette */
+  --void: #050505;
+  --text: #ffffff;
+  --lime: #ccff00;
+  --dim: #333333;
+  --dim-light: #444444;
+
+  /* Legacy mappings for compatibility */
+  --bg-primary: var(--void);
+  --bg-secondary: #0a0a0a;
+  --bg-tertiary: #151515;
+  --text-primary: var(--text);
+  --text-secondary: #888888;
+  --accent: var(--lime);
+  --accent-hover: #e0ff66;
+  --success: var(--lime);
+  --border: var(--dim);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--void);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--void);
+}
+
+/* HEADER - Kinetic Minimalist */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--void);
+  border-bottom: 1px solid var(--dim);
+}
+
+.header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.5px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.username {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem 0.75rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--dim);
+  border-radius: 0;
+}
+
+.room-id-display {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  padding: 0.4rem 0.75rem;
+  background: transparent;
+  border: 1px solid var(--dim);
+  cursor: help;
+}
+
+.copy-link-btn {
+  padding: 0.4rem 0.75rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--void);
+  background: var(--text);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.copy-link-btn:hover {
+  background: var(--lime);
+  transform: translateY(-1px);
+}
+
+/* Header Buttons Base */
+.run-button,
+.share-button,
+.packages-button,
+.libraries-button,
+.files-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--dim);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+}
+
+/* Run Button - Primary Action */
+.run-button {
+  background: var(--lime);
+  color: var(--void);
+  border: none;
+}
+
+.run-button:hover:not(:disabled) {
+  background: var(--text);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(204, 255, 0, 0.3);
+}
+
+/* Share Button */
+.share-button {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--text);
+}
+
+.share-button:hover:not(:disabled) {
+  background: var(--text);
+  color: var(--void);
+}
+
+/* Secondary Buttons */
+.packages-button,
+.libraries-button,
+.export-button {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.packages-button:hover,
+.libraries-button:hover,
+.export-button:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+/* Files Button with Usage Bar */
+.files-button {
+  background: transparent;
+  color: var(--text-secondary);
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 160px;
+  padding-bottom: 6px;
+}
+
+.files-button:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.usage-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--dim);
+}
+
+.usage-progress {
+  height: 100%;
+  background-color: var(--lime);
+  transition: width 0.3s ease;
+}
+
+/* Disabled States */
+.run-button:disabled,
+.share-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* MAIN CONTENT AREA */
+.main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  flex: 1;
+  overflow: hidden;
+  background: var(--void);
+}
+
+@media (max-width: 1200px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 150px 150px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .user-info {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+}
