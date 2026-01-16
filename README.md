@@ -9,7 +9,7 @@ A collaborative Python editor that abstracts away the complexity of environment 
 
 - **Real-time Collaboration** — Multiple users can edit code simultaneously with live cursor tracking
 - **Instant Execution** — Run Python code in a secure, sandboxed Docker environment
-- **No Setup Required** — 50+ popular Python libraries pre-installed and ready to use
+- **No Setup Required** — 50+ popular Python libraries preloaded in the environment
 - **Plot Support** — Matplotlib visualizations render directly in the browser
 - **File Upload** — Import CSV, JSON, and other data files for analysis
 
